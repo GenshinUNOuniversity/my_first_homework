@@ -163,7 +163,7 @@ prev.onclick = function () {
     header.appendChild(title);
 
     const price = document.createElement('small');
-    price.innerText = data[page*5+i].price + '元';
+    price.innerText = (data[page*5+i].price/100).toFixed(2) + '元';
     header.appendChild(price);
     itemNode.appendChild(header);
 
@@ -215,7 +215,7 @@ next.onclick = function () {
     header.appendChild(title);
 
     const price = document.createElement('small');
-    price.innerText = data[page*5+i].price + '元';
+    price.innerText = (data[page*5+i].price/100).toFixed(2) + '元';
     header.appendChild(price);
     itemNode.appendChild(header);
 
